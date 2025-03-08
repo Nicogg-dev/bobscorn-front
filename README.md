@@ -1,54 +1,66 @@
-# React + TypeScript + Vite
+<div align="center">
+  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <div>
+  
+  <br/>
+    <img src="https://img.shields.io/badge/-Typescript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
+    <img src="https://img.shields.io/badge/React-3178C6?style=for-the-badge&logo=react&logoColor=white" alt="react" />
+    <img src="https://img.shields.io/badge/Shadcn-3178C6?style=for-the-badge&logo=shadcn&logoColor=white" alt="shadcn" />
+    <img src="https://img.shields.io/badge/TailwindCSS-3178C6?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="tailwindcss" />  
+  </div>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</div>
 
-## Expanding the ESLint configuration
+## 📋 <a name="table">Tabla de contenido</a>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. ⚙ [Tecnologias](#tech-stack)
+2. 🤸 [Comenzar con la aplicacion en entorno local](#quick-start)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+## <a name="tech-stack">⚙ Tecnologias</a>
+
+[![My Skills](https://skillicons.dev/icons?i=typescript,react,tailwindcss,redux)](https://skillicons.dev)<br/>
+
+
+
+## <a name="quick-start">🤸 Comenzar con la aplicacion en entorno local</a>
+
+Sigue los siguientes pasos para correr el proyecto en tu local.
+
+*Prerequisitos*
+
+Asegurate de tener los siguientes paquetes instalados en tu maquina local:
+
+- [Git](https://git-scm.com/)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+*Clona el repositorio*
+
+```bash
+git clone https://github.com/Nicogg-dev/bobscorn-front.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+*instalacion*
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Instala las dependencias del proyecto con npm:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+*Asignar backend al proyecto*
+
+agregar la siguiente variable de entorno al archivo ".env", apuntando a la url del back:
+
+
+*Corre el proyecto*
+
+```bash
+npm start
+```
+
+
+
+
