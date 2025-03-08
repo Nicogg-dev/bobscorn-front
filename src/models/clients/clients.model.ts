@@ -5,4 +5,5 @@ export interface IClients {
         quantity: number;
         buyDate: Date;
     }[];
+    time?: number;
 }

@@ -2,12 +2,10 @@ import { IInsertClientsReq } from "@/models/clients/insert/insert-client.model";
 import ClientsService from "@/services/clients/clients.service";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
-
 export interface IPayloadInsertClients {
     params: IInsertClientsReq;
     errorCallback: (msg: string) => void;
-  }
-  
+}
 
 export const getAllClients = createAsyncThunk(
     "clients/get-all",
@@ -22,21 +20,18 @@ export const getAllClients = createAsyncThunk(
     }
 );
 
-export const insertClients = createAsyncThunk('clients/insert',
+export const insertClients = createAsyncThunk(
+    "clients/insert",
     async (payload: IPayloadInsertClients, thunkAPI) => {
-      try {
-        const resp = await ClientsService.insert(payload.params, payload.errorCallback);
-    
-        return resp;
-      } catch {
-        return thunkAPI.rejectWithValue(null);
-      }
-    });
+        try {
+            const resp = await ClientsService.insert(
+                payload.params,
+                payload.errorCallback
+            );
 
-// export const cancelRequestClients = createAsyncThunk(
-//   'vehicle-programming-scenario/cancel-request',
-//   async () => {
-//     ClientsService.cancelRequest();
-//   }
-// );
-
+            return resp;
+        } catch {
+            return thunkAPI.rejectWithValue(null);
+        }
+    }
+);
