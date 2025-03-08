@@ -60,7 +60,7 @@ const CardItem = ({ row, time }: CardItemProps) => {
     );
 
     return (
-        <div style={{ perspective: "1000px" }} className="flex flex-col items-center p-10 mb-10">
+        <div style={{ perspective: "1000px" }} className="flex flex-col items-center p-10 mb-10 hover:!blur-none">
             <motion.div
                 style={{
                     x,
@@ -72,7 +72,7 @@ const CardItem = ({ row, time }: CardItemProps) => {
                 }}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
-                className="relative w-[276px] md:w-[526px] min-h-[200px] bg-amber-50/10 rounded-[45px] cursor-pointer duration-200 shadow-lg transition-transform duration-300 hover:scale-110 group-hover:blur-sm hover:!blur-none before:absolute before:inset-0 before:opacity-70 before:rounded-2xl dark:filter-none dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.7)] border-[10px] border-blue-700/10 dark:border-blue-200/20 border-opacity-20"
+                className="relative w-[276px] md:w-[526px] min-h-[200px] bg-amber-50/10 rounded-[45px] cursor-pointer duration-200 shadow-lg transition-transform duration-300 hover:scale-110 before:absolute before:inset-0 before:opacity-70 before:rounded-2xl dark:filter-none dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.7)] border-[10px] border-blue-700/10 dark:border-blue-200/20 border-opacity-20 group-hover:blur-sm"
             >
                 <div 
                 style={{

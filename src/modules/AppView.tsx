@@ -92,14 +92,14 @@ export const AppView = () => {
             <div className="flex flex-col col-span-1 h-full md:h-[100vh] gap-6 items-center justify-center">
                 <div>
                     <h1 className="text-4xl md:text-6xl text-center font-bold">
-                        Bienvenido a Bob&apos;s Corn
+                        Bob&apos;s Corn
                     </h1>
                     <h2 className="text-xl md:text-2xl text-center text-yellow-600 dark:text-yellow-400 font-semibold">
-                        Tu tienda favorita de productos de maíz
+                        Bienvenido a tu tienda favorita de productos de maíz
                     </h2>
                 </div>
 
-                <div className="flex flex-col gap-6 p-4 w-2/3 lg:w-5/6 items-center border-[1px] border-black dark:border-white rounded-2xl bg-green-900/5 border-b-8">
+                <div className="flex flex-col gap-6 p-4 w-2/3 lg:w-5/6 items-center border-[1px] border-yellow-800 dark:border-yellow-300 rounded-2xl bg-green-900/5 border-b-8">
                     <div className="relative w-2/3 md:w-3/3 text-center justify-center py-2 group overflow-hidden">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 w-full mt-2 items-center">
                             <MainInput
