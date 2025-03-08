@@ -99,9 +99,9 @@ export const AppView = () => {
                     </h2>
                 </div>
 
-                <div className="flex flex-col gap-6 p-4 w-full xl:w-2/3 items-center">
-                    <div className="relative w-2/3 text-center justify-center py-2 group overflow-hidden">
-                        <div className="grid grid-cols-1 gap-2 w-full mt-2 items-center">
+                <div className="flex flex-col gap-6 p-4 w-2/3 lg:w-5/6 items-center border-[1px] border-white rounded-2xl bg-green-900/5 border-b-8">
+                    <div className="relative w-2/3 md:w-3/3 text-center justify-center py-2 group overflow-hidden">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 w-full mt-2 items-center">
                             <MainInput
                                 placeholder="Ingresa tu id"
                                 onActionChange={e => setUserIdentity(e.target.value)}
