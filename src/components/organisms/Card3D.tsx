@@ -78,7 +78,7 @@ const CardItem = ({ row, time }: CardItemProps) => {
                 style={{
                     background: `radial-gradient(circle at ${backgroundPosition.get()}, #dfffff, transparent)`,
                 }}
-                className="flex justify-center border-[1px] border-black dark:border-white/50 rounded-[35px] px-[15px] md:px-[25px] py-[24px]">
+                className="flex justify-center border-[1px] border-black/50 dark:border-white/50 rounded-[35px] px-[15px] md:px-[25px] py-[24px]">
 
                     <div className="flex justify-start gap-2">
                         <Timer size={50} color="#000" />
